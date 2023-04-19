@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Todo App</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style.css" type="text/css" MEDIA="screen" charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo App</title>
 </head>
 <body>
-    <div class="aaa">
-        <img src="./eisenhower-matrix.jpg">
-        <a class='more_inf' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details&quest;</a>
+    <div class="header">
+        <img class="header__img" src="./assets/img/eisenhower-matrix.jpg">
+        <a class='more_inf header__more-info' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
-    <div class="centered-main-page-element">
-        <div id='topSectionForAddingElementToList'>
-            <label for="new-task">Add Item</label>
+    <div class="wrapper">
+        <div class="form">
+            <form action="" method="post" class="add-item">
+                <label for="new-task form">Add Item</label>
+                <input id='new-task'class="task" type="text">
+                <div class="form-submit">
+                    <input type="submit" value="Add">
+                </div>
+            </form>
+        </div>
+        
+
+        <div class="add-item">
+            <label for="new-task form">Add Item</label>
             <div class="task-row-wrapper">
                 <input id='new-task'class="task" type="text">
                 <button>Add</button>
@@ -38,7 +52,7 @@
                 </ul>
 
                 <h3>Completed</h3>
-                
+
                 <ul id="completed-tasks">
                     <li>
                         <input type="checkbox" checked>
@@ -50,7 +64,6 @@
                     </li>
                 </ul>
     </div>
-
-<script type="text/javascript" SRC="app.js"></script>
+<script src="./assets/js/app.js"></script>
 </body>
 </html>
