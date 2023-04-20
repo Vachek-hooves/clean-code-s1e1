@@ -5,34 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
     <title>Todo App</title>
 </head>
 <body>
     <div class="header">
-        <img class="header__img" src="./assets/img/eisenhower-matrix.jpg">
+        <img class="header__img" src="./assets/img/eisenhower-matrix.jpg" alt="eisenhower matrix">
         <a class='more_inf header__more-info' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
-    <div class="wrapper">
-        <div class="form">
-            <form action="" method="post" class="add-item">
-                <label for="new-task form">Add Item</label>
-                <input id='new-task'class="task" type="text">
-                <div class="form-submit">
-                    <input type="submit" value="Add">
-                </div>
+    <div class="main-wrapper">
+        <!-- ADD ITEM -->
+        <div>
+            <h3 class="h3">add item</h3>
+            <form  class="add">
+                <input class="add__input-text" type="text">
+                <input id="add-item" class="add__input-submit" type="button" value="Add" >
             </form>
         </div>
         
-
-        <div class="add-item">
-            <label for="new-task form">Add Item</label>
-            <div class="task-row-wrapper">
-                <input id='new-task'class="task" type="text">
-                <button>Add</button>
-            </div>
-        </div>
-        <h3>Todo</h3>
+        <!-- TODO  -->
+        <h3 class="h3">Todo</h3>
             <ul id='incompleteTasks'>
                 <li>
                     <input type='checkbox'>
@@ -40,7 +36,7 @@
                     <input type="text" class="task">
                     <button class="edit">Edit</button>
                     <button class="delete">
-                    <img src="./remove.svg"></button>
+                    <img src="./remove.svg" alt="svg"></button>
                 </li>
                 <li class="editMode">
                     <input type="checkbox">
@@ -48,22 +44,23 @@
                     <input type="text" value="Go Shopping" class="task">
                     <button class='edit'>Save</button>
                     <button class="delete">
-                    <img src="./remove.svg"></button></li>
+                    <img src="./remove.svg" alt="svg"></button></li>
                 </ul>
 
-                <h3>Completed</h3>
+        <h3 class="h3">Completed</h3>
 
-                <ul id="completed-tasks">
-                    <li>
-                        <input type="checkbox" checked>
-                        <label class="task">See the Doctor</label>
-                        <input type="text" class="task">
-                        <button class="edit">Edit</button>
-                        <button class="delete">
-                        <img src="./remove.svg"></button>
-                    </li>
-                </ul>
+        <ul id="completed-tasks">
+            <li>
+                <input type="checkbox" checked>
+                <label class="task">See the Doctor</label>
+                <input type="text" class="task">
+                <button class="edit">Edit</button>
+                <button class="delete">
+                <img src="./remove.svg" alt="svg"></button>
+            </li>
+        </ul>
     </div>
-<script src="./assets/js/app.js"></script>
+    <script src="./assets/js/todo.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>

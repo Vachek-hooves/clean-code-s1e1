@@ -1,1 +1,4 @@
-@import './main/form.scss'
+@import './mixin/_mixin.scss';
+@import './main/_main-wrapper.scss';
+@import './header/header.scss', './main/add.scss', './main/todo.scss', './main/completed.scss';
+@import './general/basic-style.scss';

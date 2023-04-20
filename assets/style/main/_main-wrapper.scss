@@ -1,0 +1,9 @@
+.main-wrapper{
+    display: block;
+    width: 500px;
+    margin-inline: auto;
+};
+
+.h3{
+    @include heading();
+};
